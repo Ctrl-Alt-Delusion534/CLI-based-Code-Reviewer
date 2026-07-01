@@ -6,7 +6,7 @@ import { execSync } from "child_process";
 import Prism from "prismjs";
 import chalk from "chalk";
 
-// Import common language definitions statically
+
 import "prismjs/components/prism-c.js";
 import "prismjs/components/prism-cpp.js";
 import "prismjs/components/prism-java.js";
