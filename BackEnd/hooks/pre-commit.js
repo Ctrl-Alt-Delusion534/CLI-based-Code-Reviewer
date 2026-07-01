@@ -77,11 +77,12 @@ function highlightCode(code, lang) {
   return tokens.map(tokenToAnsi).join("");
 }
 
-function highlightMarkdown(markdown) {
-  return markdown.replace(/```(\w*)\r?\n([\s\S]*?)\r?\n```/g, (match, lang, code) => {
-    return highlightCode(code.trim(), lang.toLowerCase());
+const highlightMarkdown = (markdown) => {
+  // Improved regex for multiline code blocks
+  return markdown.replace(/```(\w*)\n([\s\S]*?)```/g, (_, lang, code) => {
+    return `\n${highlightCode(code.trim(), lang.toLowerCase())}\n`;
   });
-}
+};
 
 let stagedFiles = [];
 try {
