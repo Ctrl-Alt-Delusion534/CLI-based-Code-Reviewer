@@ -1,0 +1,7 @@
+node_modules/
+*.db
+review_report.md
+.env
+__pycache__/
+*.pyc
+.agents/
