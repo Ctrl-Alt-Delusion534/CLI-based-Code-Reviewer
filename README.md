@@ -1,4 +1,4 @@
-# AI-Powered Code Reviewer
+# CLI based Code Reviewer
 
 An automated code review companion that reads your code, catches security flaws, and highlights fixes right inside your terminal using intelligent caching to keep it lightning-fast.
 
